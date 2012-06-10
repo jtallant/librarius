@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-LibrariusApp::Application.load_tasks
+Librarius::Application.load_tasks

@@ -1,0 +1,13 @@
+<%= render 'head' %>
+<%= render 'nav' %>
+<div id="content-sidebar-wrap" class="container-fluid">
+	<div class="row-fluid">
+		<div id="sidebar" class="span3 sidebar">
+			<%= render 'sidebar' %>
+		</div><!-- #sidebar .span3 -->
+		<div id="content" class="span9">
+			<%= yield %>
+		</div><!-- #content .span9 -->
+	</div><!-- #content-sidebar-wrap row-fluid -->
+</div>
+<%= render 'footer' %>

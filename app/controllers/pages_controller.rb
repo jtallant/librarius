@@ -1,6 +1,7 @@
 
 class PagesController < ApplicationController
   def home
+    render :layout => "full_width"
   end
 
   def about
@@ -16,5 +17,11 @@ class PagesController < ApplicationController
   end
 
   def jobs
+  end
+
+  def groups
+  end
+
+  def dashboard
   end
 end

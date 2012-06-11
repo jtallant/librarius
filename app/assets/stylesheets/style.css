@@ -6,15 +6,18 @@ html, body {
 }
 
 body {
-	padding-top: 60px;
+	/*padding-top: 60px;*/
 }
 
 #content-sidebar-wrap {
-	padding-left: 20px;
-	min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -39px;
+    min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -40px; /* the bottom margin is the negative value of the footer's height */
+}
+
+#content, #sidebar {
+	padding-bottom: 30px;
 }
 
 /* =Forms
@@ -27,16 +30,47 @@ body {
 /* =Footer
 ---------------------------------------------------- */
 
-.push {
-	height: 39px;
-	clear: both;
-}
-
-#footer {
-	padding-top: 30px;
-	clear: both;
+#footer, .push {
+	height: 40px;
 }
 
 #footer .navbar-inner {
 	border-radius: 0;
+}
+
+
+/* =Media Queries
+---------------------------------------------------- */
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	#footer {
+		font-size: 10px;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	#footer .navbar-inner {
+		position: relative;
+		width: 100%;
+		left: -20px;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Standard desktop and up */
+@media (min-width: 940px) {
+	#content, #sidebar {
+		padding-top: 60px;
+	}
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
 }

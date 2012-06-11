@@ -15,6 +15,10 @@ Librarius::Application.routes.draw do
 
   get '/privacy' => 'pages#privacy', :as => :privacy
 
+  get '/groups' => 'pages#groups', :as => :groups
+
+  get '/dashboard' => 'pages#dashboard', :as => :dashboard
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

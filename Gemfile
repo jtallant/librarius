@@ -47,3 +47,4 @@ gem 'populator'
 gem 'faker'
 gem 'simple_form'
 gem 'devise'
+gem "omniauth-facebook"

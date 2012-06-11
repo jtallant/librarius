@@ -1,4 +1,6 @@
 Librarius::Application.routes.draw do
+  devise_for :users
+
   root to: 'pages#home'
 
   get '/help' => 'pages#help', :as => :help
@@ -12,8 +14,6 @@ Librarius::Application.routes.draw do
   get '/terms' => 'pages#terms_of_service', :as => :terms
 
   get '/privacy' => 'pages#privacy', :as => :privacy
-
-  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

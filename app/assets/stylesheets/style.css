@@ -1,0 +1,42 @@
+/* =Containers
+---------------------------------------------------- */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	padding-top: 60px;
+}
+
+#content-sidebar-wrap {
+	padding-left: 20px;
+	min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -39px;
+}
+
+/* =Forms
+---------------------------------------------------- */
+
+.form-actions {
+	clear: both;
+}
+
+/* =Footer
+---------------------------------------------------- */
+
+.push {
+	height: 39px;
+	clear: both;
+}
+
+#footer {
+	padding-top: 30px;
+	clear: both;
+}
+
+#footer .navbar-inner {
+	border-radius: 0;
+}

@@ -1,12 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.5'
-gem 'heroku'
-gem 'thin'
-gem 'slim'
-gem 'populator'
-gem 'faker'
-gem 'jquery-rails'
 
 group :development, :test do
   gem 'sqlite3'
@@ -26,8 +20,10 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
-  gem 'twitter-bootstrap-rails'
 end
+
+gem 'twitter-bootstrap-rails', '~> 2.0.8'
+gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -43,3 +39,10 @@ end
 
 # To use debugger
 # gem 'debugger'
+
+gem 'heroku'
+gem 'thin'
+gem 'slim'
+gem 'populator'
+gem 'faker'
+gem 'simple_form'

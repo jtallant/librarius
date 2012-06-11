@@ -1,0 +1,8 @@
+<div class="container-fluid">
+	<% flash.each do |name, msg| %>
+		<div class="alert alert-<%= name == :notice ? "success" : "error" %>">
+			<a class="close" data-dismiss="alert">x</a>
+			<%= msg %>
+		</div><!-- alert -->
+	<% end %>
+</div><!-- container-fluid -->

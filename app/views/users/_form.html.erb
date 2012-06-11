@@ -1,62 +1,12 @@
-<%= form_for @user, :html => { :class => 'form-horizontal' } do |f| %>
-  <div class="control-group">
-    <%= f.label :first, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :first, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :last, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :last, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :username, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :username, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :password, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :password, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :city, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :city, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :state, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :state, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :photo, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :photo, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :books, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_area :books, :class => 'text_area' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :groups, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_area :groups, :class => 'text_area' %>
-    </div>
-  </div>
-
-  <div class="form-actions">
-    <%= f.submit nil, :class => 'btn btn-primary' %>
-    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                users_path, :class => 'btn' %>
-  </div>
+<%= simple_form_for(@user, :html => {:class => 'form-horizontal' }) do |f| %>  
+  <%= f.input :first %>
+  <%= f.input :last %>
+  <%= f.input :username %>
+  <%= f.input :password %>
+  <%= f.input :city %>
+  <%= f.input :state %>
+  <%= f.input :photo %>
+  <%= f.input :books %>
+  <%= f.input :groups %>
+  <%= f.button :submit %>
 <% end %>

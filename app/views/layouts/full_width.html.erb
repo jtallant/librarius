@@ -1,4 +1,12 @@
 <%= render 'head' %>
 <%= render 'nav' %>
-<%= yield %>
+<div id="content-sidebar-wrap" class="container-fluid full-width">
+	<div class="row-fluid">
+		<div id="content" class="span12">
+			<%= render partial: 'flash', object: flash %>
+			<%= yield %>
+		</div><!-- #content .span12 -->
+	</div><!-- #content-sidebar-wrap row-fluid -->
+	<div class="push"><!-- sticky footer --></div>
+</div>
 <%= render 'footer' %>

@@ -19,6 +19,10 @@ Librarius::Application.routes.draw do
 
   get '/dashboard' => 'pages#dashboard', :as => :dashboard
 
+  # get '/login' => 'devise/sessions#new', :as => :login
+
+  # get '/users/sign_out' => 'devise/sessions#destroy', :as => :logout
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

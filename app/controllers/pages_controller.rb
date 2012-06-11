@@ -1,4 +1,3 @@
-
 class PagesController < ApplicationController
   def home
     render :layout => "full_width"

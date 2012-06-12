@@ -22,7 +22,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'twitter-bootstrap-rails', '~> 2.0.8'
+gem 'twitter-bootstrap-rails', '2.0.8'
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
@@ -41,7 +41,7 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem 'heroku'
-gem 'thin'
+# gem 'thin'
 gem 'slim'
 gem 'populator'
 gem 'faker'

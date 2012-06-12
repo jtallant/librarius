@@ -4,7 +4,6 @@ gem 'rails', '3.2.5'
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'thin'
 end
 
 group :production do

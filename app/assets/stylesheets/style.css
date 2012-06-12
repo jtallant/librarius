@@ -1,3 +1,9 @@
+/* =Import Fonts
+---------------------------------------------------- */
+
+/* font-family: 'Oleo Script', cursive; */
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script);
+
 /* =Containers
 ---------------------------------------------------- */
 
@@ -6,7 +12,7 @@ html, body {
 }
 
 body {
-	/*padding-top: 60px;*/
+	background: url(lightpaperfibers.png);
 }
 
 #content-sidebar-wrap {
@@ -20,12 +26,68 @@ body {
 	padding-bottom: 30px;
 }
 
+/* =Nav
+---------------------------------------------------- */
+
+.navbar .brand {
+	font-size: 32px;
+	font-family: 'Oleo Script', cursive;
+	color: whiteSmoke;
+	text-shadow: -1px -1px #000;
+}
+
+.navbar .nav li a {
+	padding-top: 17px;
+	font-size: 15px;
+}
+
+.navbar .btn {
+	margin-top: 12px;
+}
+
+/* =Home
+---------------------------------------------------- */
+
+.screencast-wrap h2,
+.login-wrapper h2 {
+	margin-bottom: 12px;
+}
+
+#screencast {
+	background: #EEE;
+	border-radius: 8px;
+	text-align: center;
+	padding: 130px 0;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.login-wrapper .btn {
+	padding: 10px 0;
+	font-size: 16px;
+}
+
+
+
 /* =Forms
 ---------------------------------------------------- */
 
 .form-actions {
 	clear: both;
 }
+
+#new_user {
+
+}
+
+/* =Footer Widgets
+---------------------------------------------------- */
+
+#footer-widgets {
+	margin-top: 30px;
+	width: 96%;
+}
+
 
 /* =Footer
 ---------------------------------------------------- */
@@ -66,7 +128,7 @@ body {
 /* Standard desktop and up */
 @media (min-width: 940px) {
 	#content, #sidebar {
-		padding-top: 60px;
+		padding-top: 76px;
 	}
 }
 

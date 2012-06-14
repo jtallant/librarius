@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-	layout "dashboard"
+	layout "full_width"
   def dashboard
     if !user_signed_in?
       redirect_to user_session_path

@@ -1,0 +1,20 @@
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<%= link_to "Librarius", user_root_url, :class => 'brand' %>
+			<div class="btn-group pull-right">
+				<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+					<i class="icon-user"></i>
+					<%= current_user.username %>
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><%= link_to "Dashboard", dashboard_url %></li>
+					<li class="divider"></li>
+					<li><%= link_to "Account", edit_user_registration_path %></li>
+					<li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+				</ul>
+			</div>
+		</div><!-- .container -->
+	</div><!-- .navbar-inner -->
+</div><!-- .navbar-fixed-top -->

@@ -7,33 +7,13 @@
 				<span class="icon-bar"></span>
 			</button>
 			<%= link_to "Librarius", root_url, :class => 'brand' %>
-			<% if user_signed_in? %>
-				<div class="btn-group pull-right">
-					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-						<i class="icon-user"></i>
-						<%= current_user.email %>
-						<span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Dashboard</a></li>
-						<li class="divider"></li>
-						<li><a href="#">My Groups</a></li>
-						<li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
-					</ul>
-				</div>
-			<% else %>
-				<div class="pull-right">
-					<%= link_to 'Sign In', user_session_path, :class => 'btn' %>
-				</div>
-			<% end %>
+			<div class="pull-right">
+				<%= link_to 'Sign In', user_session_path, :class => 'btn' %>
+			</div>
 			<div class="nav-collapse collapse">
 				<ul class="nav">
-					<li><%= link_to "About", about_url %></li>
-					<li><%= link_to "Contact Us", contact_url %></li>
-					<li><%= link_to "Dashboard", dashboard_url %></li>
-					<li><%= link_to "Groups", groups_url %></li>
-					<li><a href="#">Users</a></li>
-					<li><a href="#">Browse Clubs</a></li>
+					<li><%= link_to "Start Reading", dashboard_url %></li>
+					<li><%= link_to "Find Local Book Clubs", find_clubs_url %></li>
 				</ul>
 			</div><!-- nav-collapse -->
 		</div><!-- .container -->

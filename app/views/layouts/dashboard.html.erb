@@ -1,13 +1,9 @@
 <%= render 'head' %>
-<% if user_signed_in? %>
-	<%= render 'user_nav' %>
-<% else %>
-	<%= render 'nav' %>
-<% end %>
+<%= render 'user_nav' %>
 <div id="content-sidebar-wrap" class="container-fluid">
 	<div class="row-fluid">
 		<div id="sidebar" class="span3 sidebar">
-			<%= render 'sidebar' %>
+			<%= render 'users/user_sidebar' %>
 		</div><!-- #sidebar .span3 -->
 		<div id="content" class="span9">
 			<%= render partial: 'flash', object: flash %>

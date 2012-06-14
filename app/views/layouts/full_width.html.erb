@@ -1,5 +1,9 @@
 <%= render 'head' %>
-<%= render 'nav' %>
+<% if user_signed_in? %>
+	<%= render 'user_nav' %>
+<% else %>
+	<%= render 'nav' %>
+<% end %>
 <div id="content-sidebar-wrap" class="container-fluid full-width">
 	<div class="row-fluid">
 		<div id="content" class="span12">

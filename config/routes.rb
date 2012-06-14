@@ -2,6 +2,7 @@ Librarius::Application.routes.draw do
   devise_for :users
 
   root to: 'pages#home'
+  match 'dashboard' => 'users#dashboard', :as => 'user_root'
 
   get '/help' => 'pages#help', :as => :help
 
@@ -15,9 +16,15 @@ Librarius::Application.routes.draw do
 
   get '/privacy' => 'pages#privacy', :as => :privacy
 
-  get '/groups' => 'pages#groups', :as => :groups
+  get '/find-clubs' => 'pages#find_clubs', :as => :find_clubs
 
-  get '/dashboard' => 'pages#dashboard', :as => :dashboard
+  get '/dashboard' => 'users#dashboard', :as => :dashboard
+
+  get '/my-clubs' => 'users#my_clubs', :as => :my_clubs
+
+  get '/my-books' => 'users#my_books', :as => :my_books
+
+  get '/my-stats' => 'users#my_stats', :as => :my_stats
 
   # get '/login' => 'devise/sessions#new', :as => :login
 

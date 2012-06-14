@@ -18,9 +18,6 @@ class PagesController < ApplicationController
   def jobs
   end
 
-  def groups
-  end
-
-  def dashboard
+  def clubs
   end
 end

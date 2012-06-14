@@ -1,7 +1,8 @@
 Librarius::Application.routes.draw do
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   root to: 'pages#home'
+
   match 'dashboard' => 'users#dashboard', :as => 'user_root'
 
   get '/help' => 'pages#help', :as => :help
@@ -20,11 +21,11 @@ Librarius::Application.routes.draw do
 
   get '/dashboard' => 'users#dashboard', :as => :dashboard
 
-  get '/my-clubs' => 'users#my_clubs', :as => :my_clubs
+  # get '/my-clubs' => 'users#my_clubs', :as => :my_clubs
 
-  get '/my-books' => 'users#my_books', :as => :my_books
+  # get '/my-books' => 'users#my_books', :as => :my_books
 
-  get '/my-stats' => 'users#my_stats', :as => :my_stats
+  # get '/my-stats' => 'users#my_stats', :as => :my_stats
 
   # get '/login' => 'devise/sessions#new', :as => :login
 

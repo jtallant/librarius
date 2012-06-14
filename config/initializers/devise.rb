@@ -9,6 +9,11 @@ Devise.setup do |config|
   # Configure the class responsible to send e-mails.
   # config.mailer = "Devise::Mailer"
 
+  require "omniauth-facebook"
+  # config.omniauth :facebook, "320977987984977", "f81c34e18808b0ea953540d88f62d8bd"
+  config.omniauth :facebook, "320977987984977", "f81c34e18808b0ea953540d88f62d8bd",
+      {:scope => 'email, offline_access', :client_options => {:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}}
+
   # ==> ORM configuration
   # Load and configure the ORM. Supports :active_record (default) and
   # :mongoid (bson_ext recommended) by default. Other ORMs may be

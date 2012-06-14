@@ -4,7 +4,6 @@
 		<div id="screencast">
 			Badass intro video goes here
 		</div>
-		
 	</div><!-- span6 -->
 	<div class="span6 login-wrapper">
 		<h2>About Librarius</h2>
@@ -21,7 +20,7 @@
 				<a class="btn btn-inverse span12" href="/users/sign_up">Register Now</a>
 			</div>
 			<div class="span6">
-				<a class="btn btn-primary span12" href="javascript:void(0)">Login With Facebook</a>
+				<%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook), :class => 'btn btn-primary span12' %>
 			</div>
 		</div>
 	</div>

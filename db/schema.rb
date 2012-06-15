@@ -11,7 +11,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120614090439) do
+ActiveRecord::Schema.define(:version => 20120615045459) do
+
+  create_table "books", :force => true do |t|
+    t.string   "title"
+    t.string   "author"
+    t.string   "cover"
+    t.integer  "page_count"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "user_libraries", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "book_id"
+    t.boolean  "currently_reading"
+    t.integer  "current_page"
+    t.integer  "minutes_spent_reading"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

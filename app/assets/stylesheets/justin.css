@@ -1,0 +1,13 @@
+.carousel .item > img {
+	display: inline-block;
+}
+
+.collection img {
+	width: 200px;
+	height: 300px;
+}
+
+.collection {
+	width: 80%;
+	margin: 0 auto;
+}

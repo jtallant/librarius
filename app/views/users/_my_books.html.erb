@@ -2,6 +2,30 @@
 <div class="row-fluid">
 	<h3>Currenty Reading</h3>
 	<p>Horizontal Infinite Scroll/Carousel Here</p>
+	<div id="myCarousel" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+	    <div class="active item">
+	    	<div class="collection" class="container">
+		    	<a href="#"><img src="<%= asset_path('book_covers/contemporary_athletics_and_ancient_greek_ideals.large.jpg') %>" alt="" /></a>
+		    	<img src="<%= asset_path('book_covers/closing_time.large.jpg') %>" alt="" /></a>
+		    	<a href="#"><img src="<%= asset_path('book_covers/navigators_of_the_contemporary.large.jpg') %>" alt="" /></a>
+		    	<a href="#"><img src="<%= asset_path('book_covers/los_detectives_salvajes.large.jpg') %>" alt="" /></a>
+	    	</div>
+	    </div>
+	    <div class="item">
+	    	<div class="collection" class="container">
+		    	<img src="<%= asset_path('book_covers/contemporary_athletics_and_ancient_greek_ideals.large.jpg') %>" alt="" />
+		    	<img src="<%= asset_path('book_covers/closing_time.large.jpg') %>" alt="" />
+		    	<img src="<%= asset_path('book_covers/navigators_of_the_contemporary.large.jpg') %>" alt="" />
+		    	<img src="<%= asset_path('book_covers/los_detectives_salvajes.large.jpg') %>" alt="" />
+	    	</div>
+	    </div>
+  </div><!-- .carousel-inner -->
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
 </div>
 <div class="row-fluid">
 	<h3>Past Read</h3>

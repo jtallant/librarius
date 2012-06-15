@@ -1,28 +1,39 @@
 <div class="row-fluid">
-	<div id="user-info" class="span4 well">
-		<img src="<%= current_user.image %>" alt="<%= current_user.username %>" />
-		<h3><%= current_user.username %></h3>
-		Chicago, IL
-	</div>
-	<div id="now-reading" class="span4 well">
-		<h3>Now Reading</h3>
-		<h4>The Great Gatsby</h4>
-		Book Image<br />
-		<a class="btn btn-inverse" href="#">Log Time and Pages</a>
-	</div>
-	<div id="calendar" class="span4 well">
-		<h3>Calendar</h3>
-	</div>
-</div>
-<div class="row-fluid">
-	<div id="graph1" class="span4 well">
-		<h3>Total Reading Time</h3>
-		<h3>Total Pages Read</h3>
-	</div>
-	<div id="graph2" class="span4 well">
-		<h3>The Past Week</h3>
-	</div>
-	<div id="graph3" class="span4 well">
-		<h3>Progress on current book</h3>
-	</div>
-</div>
+	<div id="column-one">
+		<div id="user-info" class="row well">
+			<img class="fbphoto" src="<%= current_user.image %>" alt="<%= current_user.username %>" />
+			<h3 class="username"><%= current_user.username %></h3>
+			<h4 class="city">Chicago, IL<h4>
+		</div>
+		<div id="deadline" class="row well">
+			<h3 class="dashstatlabel">Deadline</h3>
+			<h4 class="deadline">Your next meeting is on<br><span id="meetingdate">Tuesday, June 26</span></h4>
+			<h4 class="deadline2">You have<span id="deadlinedays">12</span> days to read<span id="deadlinepages">46</span> pages.</h4>
+		</div>
+	</div><!-- #column-one -->
+	<div id="column-two">
+		<div id="now-reading" class="well">
+			<h3 class="dashstatlabel">Now Reading</h3>
+			<img class="currentbook" src="<%= asset_path('bookcovers/Odyssey.jpg') %>" />
+			<h4 class="booktitle">The Odyssey</h4>
+			<h4 class="bookauthor">Homer</h4>
+			<a class="btn btn-inverse btn-large logbutton" href="#">Log Time and Pages</a>
+		</div>
+	</div><!-- #column-two -->
+	<div id="column-three">
+		<div id="graph1" class="well">
+			<h3 class="dashstatlabel">My Daily Average</h3>
+			<h4 class="average"><span id="myavg">74</span> pages per day</h4>
+			<h3 class="dashstatlabel">Group Daily Average</h3>
+			<h4 class="average"><span id="groupavg">42</span> pages per day</h4>
+		</div>
+		<div id="graph2" class="well">
+			<h3 class="dashstatlabel">Reading Time</h3>
+			<span class="progress" id="progress-time">2:14</span>
+		</div>
+		<div id="graph3" class="well">
+			<h3 class="dashstatlabel">Progress</h3>
+			<h4 class="progress">You've read <span id="progress-stat">62%</span>of this book.</h4>
+		</div><!-- #graph3 -->
+	</div><!-- #column-three -->
+</div><!-- .row-fluid -->

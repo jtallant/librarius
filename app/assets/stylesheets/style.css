@@ -29,12 +29,15 @@ body {
 /* =Nav
 ---------------------------------------------------- */
 
-.navbar .brand {
+/*.navbar .brand {
 	font-size: 32px;
-	font-family: 'Oleo Script', cursive;
+  	font-family: "league-gothic",sans-serif;
+	text-transform: uppercase;
+	letter-spacing: -3px;
+	font-weight: 500;
 	color: whiteSmoke;
 	text-shadow: -1px -1px #000;
-}
+}*/
 
 .navbar .nav li a {
 	padding-top: 17px;

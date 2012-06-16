@@ -1,5 +1,5 @@
 <div class="row-fluid">
-	<div id="column-one">
+	<div id="column-one" class="column">
 		<div id="user-info" class="row well">
 			<img class="fbphoto" src="<%= current_user.image %>" alt="<%= current_user.username %>" />
 			<h3 class="username"><%= current_user.username %></h3>
@@ -8,10 +8,10 @@
 		<div id="deadline" class="row well">
 			<h3 class="dashstatlabel">Deadline</h3>
 			<h4 class="deadline">Your next meeting is on<br><span id="meetingdate">Tuesday, June 26</span></h4>
-			<h4 class="deadline2">You have<span id="deadlinedays">12</span> days to read<span id="deadlinepages">46</span> pages.</h4>
+			<h4 class="deadline2">You have<span id="deadlinedays" class="number">12</span> days to read<span id="deadlinepages" class="number">46</span> pages.</h4>
 		</div>
 	</div><!-- #column-one -->
-	<div id="column-two">
+	<div id="column-two" class="column">
 		<div id="now-reading" class="well">
 			<h3 class="dashstatlabel">Now Reading</h3>
 			<img class="currentbook" src="<%= asset_path('bookcovers/Odyssey.jpg') %>" />
@@ -20,12 +20,12 @@
 			<a class="btn btn-inverse btn-large logbutton" href="#">Log Time and Pages</a>
 		</div>
 	</div><!-- #column-two -->
-	<div id="column-three">
+	<div id="column-three" class="column">
 		<div id="graph1" class="well">
 			<h3 class="dashstatlabel">My Daily Average</h3>
-			<h4 class="average"><span id="myavg">74</span> pages per day</h4>
+			<h4 class="average"><span id="myavg" class="number">74</span> pages per day</h4>
 			<h3 class="dashstatlabel">Group Daily Average</h3>
-			<h4 class="average"><span id="groupavg">42</span> pages per day</h4>
+			<h4 class="average"><span id="groupavg" class="number">42</span> pages per day</h4>
 		</div>
 		<div id="graph2" class="well">
 			<h3 class="dashstatlabel">Reading Time</h3>
@@ -33,7 +33,7 @@
 		</div>
 		<div id="graph3" class="well">
 			<h3 class="dashstatlabel">Progress</h3>
-			<h4 class="progress">You've read <span id="progress-stat">62%</span>of this book.</h4>
+			<h4 class="progress">You've read <span id="progress-stat" class="number">62%</span>of this book.</h4>
 		</div><!-- #graph3 -->
 	</div><!-- #column-three -->
 </div><!-- .row-fluid -->

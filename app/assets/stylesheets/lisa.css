@@ -1,88 +1,119 @@
-.dashstatlabel{
+.dashstatlabel {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #8C3B3B; 
   display: block;
-  text-align: center;}
+  text-align: center;
+}
   
-.currentbook{
+.currentbook {
   background: #403D3A;
   padding: 1%;
   margin: 10px auto;
   display: block;
   width: auto;
-  max-width: 250px;}
+  max-width: 250px;
+}
 
-/*  
-.well{background-image: url(grunge-image-1.jpg);
+.well {
+  background-image: url(grunge-image-1.jpg);
   background-repeat: none;
-  width: auto;}*/
+  width: auto;
+}
   
-.booktitle, .bookauthor{
-  text-align: center;}
+.booktitle, .bookauthor {
+  text-align: center;
+}
 
-.booktitle{
+.booktitle {
   font-size: 20px;
-  padding: 3px;}
+  padding: 3px;
+}
 
-.bookauthor{
-  font-size: 16px;}
+.bookauthor {
+  font-size: 16px;
+}
 
-h4{
-  font-family: "EB Garamond", serif;}
+h4 {
+  font-family: "EB Garamond", serif;
+}
 
-.logbutton{
+.logbutton {
   margin: 10px auto;
   width: auto;
-  display: block;}
+  display: block;
+}
 
 /*.calendar{float: left;} */
 
-.fbphoto{
+.fbphoto {
   background: #403d3A;
   padding: 1%;
   display: block;
   width: auto;
-  margin: 10px auto;}
+  margin: 10px auto;
+}
 
-.username, .city{
-  text-align: center;}
+.username, .city {
+  text-align: center;
+}
 
-#progress-stat, #myavg, #groupavg, #deadlinedays, #deadlinepages, #meetingdate{
+/* 
+
+Give these all the same class (you can still keep the IDS)
+That way you can use one selector like below
+
+#progress-stat, #myavg, #groupavg, #deadlinedays, #deadlinepages, #meetingdate {
   font-family: "league-gothic", sans-serif;
   font-size: 30px;
   padding: 5px;
   vertical-align: middle;
-  color: #637D74;}
+  color: #637D74;
+}
 
-#progress-time{
+*/
+
+.number {
+  font-family: "league-gothic", sans-serif;
+  font-size: 30px;
+  padding: 5px;
+  vertical-align: middle;
+  color: #637D74;
+}
+
+#progress-time {
   font-family: "league-gothic", sans-serif;
   font-size: 48px;
   padding-top: 20px;
   padding-bottom: 0px;
   vertical-align: middle;
   display: block;
-  color: #637D74;}
+  color: #637D74;
+}
 
-.deadline, .deadline2{
-  padding-top: 10px;}
+.deadline, .deadline2 {
+  padding-top: 10px;
+}
 
-.deadline2{
-  display: block;
-  text-align: center;}  
-
-#meetingdate{
+.deadline2 {
   display: block;
   text-align: center;
-  padding: 10px;}
+}  
 
-.progress, .average{
+#meetingdate {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+.progress, .average {
   padding: 3px;
   text-align: center;
   height: 45px;
   vertical-align: middle;
   padding-top: 15px;
-  margin-bottom: 0px;}
+  margin-bottom: 0px;
+}
   
 #user-info, #deadline {
 /*  float: left !important;*/

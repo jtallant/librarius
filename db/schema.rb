@@ -11,25 +11,56 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120615045459) do
+ActiveRecord::Schema.define(:version => 20120616044540) do
 
   create_table "books", :force => true do |t|
     t.string   "title"
     t.string   "author"
     t.string   "cover"
     t.integer  "page_count"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.string   "description"
   end
 
-  create_table "user_libraries", :force => true do |t|
-    t.integer  "user_id"
+  create_table "clubs", :force => true do |t|
+    t.string   "name"
+    t.string   "location"
+    t.text     "rating"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "libraries", :force => true do |t|
+    t.string   "category"
+    t.boolean  "owned_by_user"
+    t.integer  "librariable_id"
+    t.string   "librariable_type"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
+  add_index "libraries", ["librariable_id", "librariable_type"], :name => "index_libraries_on_librariable_id_and_librariable_type"
+
+  create_table "library_books", :force => true do |t|
     t.integer  "book_id"
-    t.boolean  "currently_reading"
-    t.integer  "current_page"
-    t.integer  "minutes_spent_reading"
-    t.datetime "created_at",            :null => false
-    t.datetime "updated_at",            :null => false
+    t.integer  "library_id"
+    t.integer  "user_id"
+    t.integer  "group_id"
+    t.datetime "date_completed"
+    t.integer  "pages_read"
+    t.integer  "page_count"
+    t.integer  "minutes_logged"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "memberships", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "club_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|

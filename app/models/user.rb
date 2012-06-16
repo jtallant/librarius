@@ -1,7 +1,4 @@
 class User < ActiveRecord::Base
-  has_many :user_library
-  has_many :books, through: :user_library
-
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
@@ -11,6 +8,11 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :username, :email, :password, :password_confirmation, :remember_me, :state, :city, :provider, :uid, :image
   # attr_accessible :title, :body
+
+  has_many :memberships
+	has_many :clubs, :through => :memberships
+	has_many :libraries, :as => :librariable
+	has_many :library_books
 
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
 	  # user = User.where(:provider => auth.provider, :uid => auth.uid, :email => auth.info.email).first

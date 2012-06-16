@@ -8,6 +8,7 @@
 	text-shadow: 1px 1px #ad9a94;
 	background: #637d74;
 }
+
 .navbar-inner{
 	border-bottom: 5px solid #637d74;
 }
@@ -16,53 +17,38 @@
 	font-family: "league-gothic",sans-serif;
 	text-transform: uppercase;
 	font-weight: bold;
-/*	font-variant: small-caps;*/
-/*	letter-spacing: 1px;
-*/	font-size: 20px;
-	
+	font-size: 20px;	
 }
 
-
-.nav-tabs li a{
+.nav-tabs li a {
 	color: #637d74;
 	border-radius: 0px;
 	padding: 10px 50px;
 	
 }
 
-.well{
+.well {
 	border:none;
 	border-radius: 0px;
 }
 
-
-
-.btn{
+.btn {
 	font-family: "league-gothic",sans-serif;
-	/*font-variant: small-caps;*/
 	text-transform: uppercase;
 	font-size: 12px;
-	
-	
 }
 
-
-
-h3{
+h3 {
 	font-family: "league-gothic",sans-serif;
 	text-transform: lowercase;
-	/*font-variant: small-caps;*/
-	
 	font-weight: bold;
 	font-size: 18px;
 	color: #8c3b3b;
 	text-shadow: 1px 1px #ad9a94;
 	border-bottom: 1px solid #8c3b3b;
-
-	
 }
 
-h4{
+h4 {
 	font-family: "EB Garamond", serif;
 	font-size: 16px;
 }

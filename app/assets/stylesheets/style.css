@@ -3,6 +3,7 @@
 
 /* font-family: 'Oleo Script', cursive; */
 @import url(http://fonts.googleapis.com/css?family=Oleo+Script);
+@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
 
 /* =Containers
 ---------------------------------------------------- */
@@ -12,7 +13,7 @@ html, body {
 }
 
 body {
-	background: url(lightpaperfibers.png);
+	background: url(bg.jpg);
 }
 
 #content-sidebar-wrap {
@@ -26,18 +27,71 @@ body {
 	padding-bottom: 30px;
 }
 
-/* =Nav
+/* =Defaults
 ---------------------------------------------------- */
 
-/*.navbar .brand {
-	font-size: 32px;
-  	font-family: "league-gothic",sans-serif;
+h1,h2,h3,h4,h5,h6 {
+	font-family: "league-gothic", sans-serif;
 	text-transform: uppercase;
-	letter-spacing: -3px;
-	font-weight: 500;
-	color: whiteSmoke;
-	text-shadow: -1px -1px #000;
-}*/
+	/*color: #8C3B3B;*/
+}
+
+h2 {
+	font-size: 32px;
+}
+
+.well {
+	background: url(darkdenim3.png);
+	box-shadow: none;
+	border: 0;
+}
+
+.well h3 {
+	color: #DDD;
+	font-size: 26px;
+	margin-bottom: 10px;
+}
+
+.well p {
+	color: #999;
+}
+
+/* =Nav & Nav Tabs
+---------------------------------------------------- */
+
+.nav, .nav-tabs {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.nav-tabs {
+	border-bottom: 1px solid #555;
+}
+
+.nav-tabs li a {
+	color: #555;
+	border-radius: 0px;
+	padding: 10px 50px;
+}
+
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+	background: transparent;
+	border: 1px solid #555;
+	border-bottom: 1px solid #ddd6c6;
+	color: #333;
+}
+
+.navbar .brand {
+	font-size: 32px;
+  	font-family: "Oleo Script",sans-serif;
+	color: #DDD;
+	letter-spacing: 1px;
+}
+
+.navbar-fixed-top .navbar-inner {
+	background: url(darkdenim3.png);
+}
 
 .navbar .nav li a {
 	padding-top: 17px;
@@ -51,6 +105,39 @@ body {
 .navbar .btn-group .btn {
 	margin-top: 7px;
 }
+
+
+/* =Nav & Nav Tabs
+---------------------------------------------------- */
+
+.nav > li > a:hover {
+	background: transparent;
+	border: 0;
+	color: #333;
+}
+
+/* =Sidebar Nav
+---------------------------------------------------- */
+
+.well.sidebar-nav {
+	padding: 15px 0;
+}
+.sidebar-nav li a {
+	color: #D69695;
+	text-shadow: none;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li a:active {
+	background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav .nav-header {
+	color: #DDD;
+	font-size: 16px;
+	text-shadow: none;
+}
+
 
 /* =Home
 ---------------------------------------------------- */
@@ -74,7 +161,9 @@ body {
 	font-size: 16px;
 }
 
-
+.club {
+	margin-bottom: 28px;
+}
 
 /* =Forms
 ---------------------------------------------------- */
@@ -105,8 +194,30 @@ body {
 
 #footer .navbar-inner {
 	border-radius: 0;
+	background: transparent;
 }
 
+#footer .nav a {
+	font-weight: normal;
+	color: #666;
+	font-size: 12px;
+	text-shadow: none;
+}
+
+img.typekit-badge {
+	display: none !important;
+}
+
+/* =Place Holders
+---------------------------------------------------- */
+
+.ph {
+	display: inline-block;
+	width: 60px;
+	height: 90px;
+	background: #fff;
+	margin-right: 10px;
+}
 
 /* =Media Queries
 ---------------------------------------------------- */

@@ -1,128 +1,6 @@
-.dashstatlabel {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #8C3B3B; 
-  display: block;
-  text-align: center;
-}
-  
-.currentbook {
-  background: #403D3A;
-  padding: 1%;
-  margin: 10px auto;
-  display: block;
-  width: auto;
-  max-width: 250px;
-}
+/* === Structure === */
 
-.well {
-  background-image: url(grunge-image-1.jpg);
-  background-repeat: none;
-  width: auto;
-}
-  
-.booktitle, .bookauthor {
-  text-align: center;
-}
-
-.booktitle {
-  font-size: 20px;
-  padding: 3px;
-}
-
-.bookauthor {
-  font-size: 16px;
-}
-
-h4 {
-  font-family: "EB Garamond", serif;
-}
-
-.logbutton {
-  margin: 10px auto;
-  width: auto;
-  display: block;
-}
-
-/*.calendar{float: left;} */
-
-.fbphoto {
-  background: #403d3A;
-  padding: 1%;
-  display: block;
-  width: auto;
-  margin: 10px auto;
-}
-
-.username, .city {
-  text-align: center;
-}
-
-/* 
-
-Give these all the same class (you can still keep the IDS)
-That way you can use one selector like below
-
-#progress-stat, #myavg, #groupavg, #deadlinedays, #deadlinepages, #meetingdate {
-  font-family: "league-gothic", sans-serif;
-  font-size: 30px;
-  padding: 5px;
-  vertical-align: middle;
-  color: #637D74;
-}
-
-*/
-
-.number {
-  font-family: "league-gothic", sans-serif;
-  font-size: 30px;
-  padding: 5px;
-  vertical-align: middle;
-  color: #637D74;
-}
-
-#progress-time {
-  font-family: "league-gothic", sans-serif;
-  font-size: 48px;
-  padding-top: 20px;
-  padding-bottom: 0px;
-  vertical-align: middle;
-  display: block;
-  color: #637D74;
-}
-
-.deadline, .deadline2 {
-  padding-top: 10px;
-}
-
-.deadline2 {
-  display: block;
-  text-align: center;
-}  
-
-#meetingdate {
-  display: block;
-  text-align: center;
-  padding: 10px;
-}
-
-.progress, .average {
-  padding: 3px;
-  text-align: center;
-  height: 45px;
-  vertical-align: middle;
-  padding-top: 15px;
-  margin-bottom: 0px;
-}
-  
-#user-info, #deadline {
-/*  float: left !important;*/
-/*  clear: none !important;*/
-}
-
-#column-one,
-#column-two, 
-#column-three {
+.column {
   float: left;
   min-width: 290px;
   padding: 10px 10px;
@@ -142,3 +20,142 @@ That way you can use one selector like below
   width: 24%;
   min-width: 270px;
 }
+
+/* === Wells === */
+
+#dashboard .well {
+  width: auto;
+}
+
+#dashboard .well h3,
+#dashboard .well h4 {
+  color: #fff;
+  text-shadow: -1px -1px #111;
+}
+
+#dashboard .well p {
+  font-size: 22px;
+  color: #fff;
+  font-family: "league-gothic", sans-serif;
+  text-align: center;
+  line-height: 37px;
+  letter-spacing: 1px;
+}
+
+#dashboard .well .number {
+  color: #D69695;
+}
+
+.number {
+  font-family: "league-gothic", sans-serif;
+  font-size: 30px;
+  padding: 5px;
+  vertical-align: middle;
+  color: #637D74;
+  text-shadow: -1px -1px #222;
+}
+
+.dashstatlabel {
+  display: block;
+  text-align: center;
+}
+
+/* === User Box === */
+
+.fbphoto {
+  background: #403d3A;
+  padding: 1%;
+  display: block;
+  width: auto;
+  margin: 10px auto;
+}
+
+.username, .city {
+  text-align: center;
+}
+
+/* === Deadline === */
+
+.deadline, .deadline2 {
+  padding-top: 10px;
+}
+
+.deadline2 {
+  display: block;
+  text-align: center;
+}
+
+#meetingdate {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+/* === Current Book === */
+
+#column-two .well {
+  padding-bottom: 10px;
+}
+
+.currentbook {
+  margin: 10px auto;
+  display: block;
+  width: auto;
+  max-width: 250px;
+}
+
+.booktitle, .bookauthor {
+  text-align: center;
+}
+
+.booktitle {
+  font-size: 20px;
+  padding: 3px;
+}
+
+.bookauthor {
+  font-size: 16px;
+}
+
+#now-reading .btn-danger {
+  margin: 15px auto;
+  width: auto;
+  display: block;
+}
+
+/* === Averages === */
+
+#dashboard #averages p {
+  line-height: 100%;
+}
+
+.average {
+  padding: 3px;
+  text-align: center;
+  height: 45px;
+  vertical-align: middle;
+  padding-top: 15px;
+  margin-bottom: 0px;
+}
+
+/* === Reading Time === */
+
+#reading-time .number {
+  text-align: center;
+  display: block;
+}
+
+
+/* === Progress === */
+
+#progress-time {
+  font-family: "league-gothic", sans-serif;
+  font-size: 48px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  vertical-align: middle;
+  display: block;
+  color: #637D74;
+}
+
+

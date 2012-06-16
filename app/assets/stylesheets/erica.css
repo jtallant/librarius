@@ -1,51 +1,46 @@
-.navbar .brand {
-	font-size: 32px;
-  	font-family: "league-gothic",sans-serif;
-	text-transform: uppercase;
-	letter-spacing: -3px;
-	font-weight: 500;
-	color: #403d3a;
-	text-shadow: 1px 1px #ad9a94;
-	background: #637d74;
+.navbar-inner {
+	/*border-bottom: 5px solid #637d74;*/
 }
 
-.navbar-inner{
-	border-bottom: 5px solid #637d74;
-}
-
-.nav, .nav-tabs{
-	font-family: "league-gothic",sans-serif;
-	text-transform: uppercase;
+.nav, .nav-tabs {
+	/*font-family: "league-gothic",sans-serif;*/
+	/*text-transform: uppercase;*/
 	font-weight: bold;
 	font-size: 20px;	
 }
 
+.nav-tabs {
+	border-bottom: 1px solid #555;
+}
+
 .nav-tabs li a {
-	color: #637d74;
+	/*color: #637d74;*/
+	color: #555;
 	border-radius: 0px;
 	padding: 10px 50px;
-	
+}
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+	background: transparent;
+	border: 1px solid #555;
+	border-bottom: 1px solid #ddd6c6;
+	color: #333;
 }
 
 .well {
-	border:none;
-	border-radius: 0px;
+
 }
 
 .btn {
-	font-family: "league-gothic",sans-serif;
-	text-transform: uppercase;
-	font-size: 12px;
+
 }
 
 h3 {
 	font-family: "league-gothic",sans-serif;
-	text-transform: lowercase;
+	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 22px;
 	color: #8c3b3b;
-	text-shadow: 1px 1px #ad9a94;
-	border-bottom: 1px solid #8c3b3b;
 }
 
 h4 {

@@ -3,12 +3,15 @@
 		<div id="user-info" class="row well">
 			<img class="fbphoto" src="<%= current_user.image %>" alt="<%= current_user.username %>" />
 			<h3 class="username"><%= current_user.username %></h3>
-			<h4 class="city">Chicago, IL<h4>
+			<h4 class="city">Chicago, IL</h4>
 		</div>
 		<div id="deadline" class="row well">
 			<h3 class="dashstatlabel">Deadline</h3>
-			<h4 class="deadline">Your next meeting is on<br><span id="meetingdate">Tuesday, June 26</span></h4>
-			<h4 class="deadline2">You have<span id="deadlinedays" class="number">12</span> days to read<span id="deadlinepages" class="number">46</span> pages.</h4>
+			<p>
+				Your next meeting is on<br />
+				<span class="number">Tuesday, June 26</span><br />
+				You have <span class="number">12</span> days to read <span class="number">100</span> pages.
+			</p>
 		</div>
 	</div><!-- #column-one -->
 	<div id="column-two" class="column">
@@ -17,23 +20,23 @@
 			<img class="currentbook" src="<%= asset_path('bookcovers/Odyssey.jpg') %>" />
 			<h4 class="booktitle">The Odyssey</h4>
 			<h4 class="bookauthor">Homer</h4>
-			<a class="btn btn-inverse btn-large logbutton" href="#">Log Time and Pages</a>
+			<a class="btn btn-danger btn-large" href="#">Log Time and Pages</a>
 		</div>
 	</div><!-- #column-two -->
 	<div id="column-three" class="column">
-		<div id="graph1" class="well">
+		<div id="averages" class="well">
 			<h3 class="dashstatlabel">My Daily Average</h3>
-			<h4 class="average"><span id="myavg" class="number">74</span> pages per day</h4>
+			<p class="average"><span class="number">74</span> pages per day</p>
 			<h3 class="dashstatlabel">Group Daily Average</h3>
-			<h4 class="average"><span id="groupavg" class="number">42</span> pages per day</h4>
+			<p class="average"><span class="number">42</span> pages per day</p>
 		</div>
-		<div id="graph2" class="well">
+		<div id="reading-time" class="well">
 			<h3 class="dashstatlabel">Reading Time</h3>
-			<span class="progress" id="progress-time">2:14</span>
+			<span class="number">2:14</span>
 		</div>
 		<div id="graph3" class="well">
 			<h3 class="dashstatlabel">Progress</h3>
-			<h4 class="progress">You've read <span id="progress-stat" class="number">62%</span>of this book.</h4>
+			<p>You've read <span class="number">62%</span> of this book.</p>
 		</div><!-- #graph3 -->
 	</div><!-- #column-three -->
 </div><!-- .row-fluid -->

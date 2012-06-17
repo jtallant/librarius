@@ -10,8 +10,7 @@ Devise.setup do |config|
   # config.mailer = "Devise::Mailer"
 
   require "omniauth-facebook"
-  # config.omniauth :facebook, "320977987984977", "f81c34e18808b0ea953540d88f62d8bd"
-  config.omniauth :facebook, "320977987984977", "f81c34e18808b0ea953540d88f62d8bd",
+  config.omniauth :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET'],
       {:scope => 'email, offline_access', :client_options => {:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}}
 
   # ==> ORM configuration

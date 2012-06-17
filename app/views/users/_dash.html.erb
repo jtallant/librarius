@@ -20,8 +20,25 @@
 			<img class="currentbook" src="<%= asset_path('bookcovers/Odyssey.jpg') %>" />
 			<h4 class="booktitle">The Odyssey</h4>
 			<h4 class="bookauthor">Homer</h4>
-			<a class="btn btn-danger btn-large" href="#">Log Time and Pages</a>
-		</div>
+			<a class="btn btn-danger btn-large" data-toggle="modal" href="#logTime">Log Time and Pages</a>
+			<div class="modal hide" id="logTime">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">×</button>
+					<h3>Log Time</h3>
+				</div>
+				<div class="modal-body">
+					<div class="currenTime">0:00</div>
+					<button class="btn">Start Timer</button>
+					<button class="btn">Pause Timer</button>
+					<h4>Pages Read</h4>
+					<input class="pagesRead" />
+				</div>
+				<div class="modal-footer">
+					<a href="#" class="btn" data-dismiss="modal">Close</a>
+					<a href="#" class="btn btn-primary">Save changes</a>
+				</div>
+			</div><!-- #logTime -->
+		</div><!-- #now-reading -->
 	</div><!-- #column-two -->
 	<div id="column-three" class="column">
 		<div id="averages" class="well">

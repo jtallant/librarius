@@ -1,12 +1,13 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.5'
+gem 'amazon-ecs'
 gem 'heroku'
 gem 'populator'
 gem 'faker'
 gem 'simple_form'
 gem 'devise'
-gem "omniauth-facebook"
+gem 'omniauth-facebook'
 gem 'twitter-bootstrap-rails', '2.0.8'
 gem 'jquery-rails'
 

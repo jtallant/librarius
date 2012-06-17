@@ -1,3 +1,12 @@
+#mybooks h2 {
+	text-align: center;
+	margin-bottom: 18px;
+}
+
+#mybooks .row-fluid {
+	margin-bottom: 40px;
+}
+
 .carousel .item > img {
 	display: inline-block;
 }

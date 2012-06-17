@@ -9,9 +9,10 @@
 			<h3 class="dashstatlabel">Deadline</h3>
 			<p>
 				Your next meeting is on<br />
-				<span class="number">Tuesday, June 26</span><br />
-				You have <span class="number">12</span> days to read <span class="number">100</span> pages.
+				<span class="number date">Tuesday, June 26</span><br/>
+				You have <span class="number">7</span> days to read <span class="number">90</span> pages.
 			</p>
+			<a class="btn btn-danger btn-large reminder" id="reminder" data-toggle="modal" href="#logTime">Send Me a Reminder</a>
 		</div>
 	</div><!-- #column-one -->
 	<div id="column-two" class="column">
@@ -21,6 +22,7 @@
 			<h4 class="booktitle">The Odyssey</h4>
 			<h4 class="bookauthor">Homer</h4>
 			<a class="btn btn-danger btn-large" data-toggle="modal" href="#logTime">Log Time and Pages</a>
+			
 			<div class="modal hide" id="logTime">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">×</button>
@@ -38,22 +40,33 @@
 					<a href="#" class="btn btn-primary">Save changes</a>
 				</div>
 			</div><!-- #logTime -->
+		</div>
+		<div id="averages" class="well">
+			<h3 class="dashstatlabel">Total Reading Time</h3>
+			<p class="average"><span class="number">2</span> hours and <span class="number">14</span> minutes</p>
 		</div><!-- #now-reading -->
 	</div><!-- #column-two -->
 	<div id="column-three" class="column">
+		<div id="averages" class="well">
+			<h3 class="dashstatlabel">My Progress</h3>
+			 <!-- <div id="chart_div" style="width: 200px; height: 200px;"></div> -->
+			<p class="average"><span class="number">74%</span> complete</p>
+			<h3 class="dashstatlabel">Average Group Progress</h3>
+			<p class="average"><span class="number">85%</span> complete</p>
+		</div>
 		<div id="averages" class="well">
 			<h3 class="dashstatlabel">My Daily Average</h3>
 			<p class="average"><span class="number">74</span> pages per day</p>
 			<h3 class="dashstatlabel">Group Daily Average</h3>
 			<p class="average"><span class="number">42</span> pages per day</p>
 		</div>
-		<div id="reading-time" class="well">
-			<h3 class="dashstatlabel">Reading Time</h3>
-			<span class="number">2:14</span>
-		</div>
-		<div id="graph3" class="well">
-			<h3 class="dashstatlabel">Progress</h3>
-			<p>You've read <span class="number">62%</span> of this book.</p>
-		</div><!-- #graph3 -->
+		<!-- <div id="averages" class="well">
+					<h3 class="dashstatlabel">Reading Time</h3>
+					<p class="average"><span class="number">2</span> hours, <span class="number">14</span> minutes</p>
+				</div> -->
+		<!-- <div id="graph3" class="well">
+					<h3 class="dashstatlabel">Progress</h3>
+					<p>You've read <span class="number">62%</span> of this book.</p>
+				</div> --><!-- #graph3 -->
 	</div><!-- #column-three -->
 </div><!-- .row-fluid -->

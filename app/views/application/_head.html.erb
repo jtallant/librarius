@@ -11,5 +11,24 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Reading', 'Pages'],
+          ['Completed',     258],
+          ['Remaining',      90],
+        ]);
+
+        var options = {
+          title: 'Pages Read'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
 </head>
 <body>

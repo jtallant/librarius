@@ -1,1 +1,58 @@
 /** Merged to main CSS **/
+
+
+.brand{
+	font-family: "league-gothic", sans-serif !important;
+	text-transform: uppercase;
+}
+
+.nav, .nav-tabs{
+	text-transform: uppercase;
+}
+
+.nav, .nav-tabs, .nav-tabs li a {
+	border-top-right-radius:4px !important;
+	border-top-left-radius:4px !important;
+	  
+}
+
+.dashstatlabel{
+	font-family: "eb garamond", serif !important;
+	text-transform: lowercase;
+	color: #d4a960 !important;
+/*	text-shadow: 1px 1px #637d74 !important;*/
+	border-bottom: 1px solid #637d74;
+}
+
+	
+}
+.city{
+	font-family: "eb garamond", serif !important;
+	text-transform: none;
+	
+}
+
+.average{
+	font-size: 28px !important;
+}
+
+.number{
+	font-size: 44px !important;
+	color: #637d74 !important;
+}
+
+
+.date{
+	color: #8c3b3b !important;
+	line-height: 66px;
+}
+
+#reminder{
+	margin:15px auto;
+	  width:auto;
+	}
+
+
+.chart_div{
+	background: url(darkdenim3.png);
+}

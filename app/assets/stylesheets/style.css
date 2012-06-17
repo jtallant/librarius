@@ -114,6 +114,13 @@ h4 {
 	margin-top: 7px;
 }
 
+.navbar .beta {
+	font-size: 22px;
+	display: block;
+	float: left;
+	margin-top: 18px;
+}
+
 
 /* =Nav & Nav Tabs
 ---------------------------------------------------- */
@@ -138,6 +145,7 @@ h4 {
 .sidebar-nav li a:hover,
 .sidebar-nav li a:active {
 	background: rgba(255,255,255,0.2);
+	color: #DDD;
 }
 
 .sidebar-nav .nav-header {
@@ -150,9 +158,13 @@ h4 {
 /* =Home
 ---------------------------------------------------- */
 
-.screencast-wrap h2,
+.home-left h2,
 .login-wrapper h2 {
 	margin-bottom: 12px;
+}
+
+.alert-block.beta {
+	padding-bottom: 7px;
 }
 
 #screencast {
@@ -171,6 +183,11 @@ h4 {
 
 .club {
 	margin-bottom: 28px;
+}
+
+.intro p {
+	font-size: 22px;
+	line-height: 140%;
 }
 
 /* =Forms

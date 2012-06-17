@@ -1,4 +1,3 @@
-
 class LibrariesController < ApplicationController
   def index
   	@libraries = @librariable.library

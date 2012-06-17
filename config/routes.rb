@@ -25,6 +25,8 @@ Librarius::Application.routes.draw do
 
   get '/dashboard' => 'users#dashboard', :as => :dashboard
 
+  get '/search_books' => 'users#search_books', :as => :search_books
+
   # get '/my-clubs' => 'users#my_clubs', :as => :my_clubs
 
   # get '/my-books' => 'users#my_books', :as => :my_books

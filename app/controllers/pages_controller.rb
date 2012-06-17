@@ -13,6 +13,7 @@ class PagesController < ApplicationController
   end
 
   def terms_of_service
+    render :layout => "full_width"
   end
 
   def jobs

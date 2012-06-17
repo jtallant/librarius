@@ -1,0 +1,32 @@
+<script>
+	$(document).ready(function() {
+		$('body').addClass('search-books');
+	});
+</script>
+<div class="row-fluid">
+	<div class="span5">
+		<%= form_tag("/search_books", :method => "get", class: 'form-search') do %>
+		  <%= label_tag(:title, "Search Amazon Books:") %>
+		  <%= text_field_tag(:title, nil, class: 'input-large search-query') %>
+		  <%= submit_tag("Search", class: 'btn') %>
+		<% end %>
+	</div>
+	<div class="span2">
+		<%= link_to "Back to Dashboard", dashboard_url, class: 'btn btn-inverse' %>
+	</div>
+</div>
+
+<% if @res %>
+	<% @res.items.each do |item| %>
+	<div class="item row-fluid">
+		<div class="span2">
+	  	<img src="<%= item.get('ImageSets/ImageSet/MediumImage/URL') %>" />
+	  </div>
+	  <div class="span10">
+	  	<h3><%= item.get('ItemAttributes/Title') %></h3>
+	  	<p class="author">By: <%= item.get('ItemAttributes/Author') %></p>
+	  	<a class="btn" href="#">Add to Currently Reading</a>
+		</div>
+	</div><!-- .item -->
+	<% end %>
+<% end %>

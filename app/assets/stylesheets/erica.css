@@ -23,13 +23,8 @@
 /*	text-shadow: 1px 1px #637d74 !important;*/
 	border-bottom: 1px solid #637d74;
 }
-
-	
-}
-.city{
-	font-family: "eb garamond", serif !important;
-	text-transform: none;
-	
+#deadline{
+	border-radius: 4px !important;
 }
 
 .average{
@@ -48,11 +43,27 @@
 }
 
 #reminder{
-	margin:15px auto;
-	  width:auto;
+	margin:15px 30px 10px 50px;
+	padding: 10px 50px;
 	}
+
+#logtimebtn{
+	padding: 10px 80px;
+	margin: 15px 0px 10px 85px;
+}
 
 
 .chart_div{
 	background: url(darkdenim3.png);
+}
+
+.booktitle{
+	font-size: 30px !important;
+}
+
+.bookauthor{
+	font-size: 20px !important;
+	font-family: "eb garamond", serif;
+	color: #637d74 !important;
+	line-height: 26px;
 }

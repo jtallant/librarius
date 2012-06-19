@@ -48,19 +48,19 @@ $(document).ready(function() {
 </script>
 <div class="row-fluid">
 	<div id="column-one" class="column">
-		<div id="user-info" class="row well">
+		<div id="user-info" class="well">
 			<img class="fbphoto" src="<%= current_user.image %>" alt="<%= current_user.username %>" />
 			<h3 class="username"><%= current_user.username %></h3>
-			<h4 class="city">Chicago, IL</h4>
+			<h4 class="bookauthor">Chicago, IL</h4>
 		</div>
-		<div id="deadline" class="row well">
+		<div id="deadline" class="well">
 			<h3 class="dashstatlabel">Deadline</h3>
 			<p>
 				Your next meeting is on<br />
 				<span class="number date">Tuesday, June 26</span><br/>
 				You have <span class="number">7</span> days to read <span class="number">90</span> pages.
 			</p>
-			<a class="btn btn-danger btn-large reminder" id="reminder" data-toggle="modal" href="#logTime">Send Me a Reminder</a>
+			<a class="btn btn-large reminder" id="reminder" data-toggle="modal" href="#logTime">Send Me a Reminder</a>
 		</div>
 	</div><!-- #column-one -->
 	<div id="column-two" class="column">
@@ -69,7 +69,7 @@ $(document).ready(function() {
 			<img class="currentbook" src="<%= asset_path('bookcovers/Odyssey.jpg') %>" />
 			<h4 class="booktitle">The Odyssey</h4>
 			<h4 class="bookauthor">Homer</h4>
-			<a class="btn btn-danger btn-large" data-toggle="modal" href="#logTime">Log Time and Pages</a>
+			<a class="btn btn-large" id="logtimebtn" data-toggle="modal" href="#logTime">Log Time and Pages</a>
 			
 			<div class="modal hide" id="logTime">
 				<div class="modal-header">
@@ -91,7 +91,7 @@ $(document).ready(function() {
 		</div>
 		<div id="averages" class="well">
 			<h3 class="dashstatlabel">Total Reading Time</h3>
-			<p class="average"><span class="number">2</span> hours and <span class="number">14</span> minutes</p>
+			<p class="average"><span class="number">6</span> hours and <span class="number">14</span> minutes</p>
 		</div><!-- #now-reading -->
 	</div><!-- #column-two -->
 	<div id="column-three" class="column">

@@ -1,3 +1,51 @@
+<script>
+$(document).ready(function() {
+	var chart;
+    chart = new Highcharts.Chart({
+        chart: {
+            renderTo: 'hc-progress',
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+        title: false,
+        tooltip: {
+            formatter: function() {
+                return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
+            }
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false,
+                    color: '#000000',
+                    connectorColor: '#ffffff',
+                    fill: 'transparent',
+                    formatter: function() {
+                        return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
+                    }
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Browser share',
+            data: [
+                ['Read',   84.0],
+                // ['To Read',       16.0],
+                {
+                    name: 'To Read',
+                    y: 16.0,
+                    sliced: true,
+                    selected: true
+                },
+            ]
+        }]
+    });
+});
+</script>
 <div class="row-fluid">
 	<div id="column-one" class="column">
 		<div id="user-info" class="row well">
@@ -29,9 +77,9 @@
 					<h3>Log Time</h3>
 				</div>
 				<div class="modal-body">
-					<div class="currenTime">0:00</div>
-					<button class="btn">Start Timer</button>
-					<button class="btn">Pause Timer</button>
+					<div id="countdown">00:00</div>
+					<button id="btn-start" class="btn">Start Timer</button>
+					<button id="reset" class="btn">Reset Timer</button>
 					<h4>Pages Read</h4>
 					<input class="pagesRead" />
 				</div>
@@ -53,6 +101,10 @@
 			<p class="average"><span class="number">74%</span> complete</p>
 			<h3 class="dashstatlabel">Average Group Progress</h3>
 			<p class="average"><span class="number">85%</span> complete</p>
+			<div id="hc-progress" style="min-width: 200px; height: 200px; margin: 0 auto"></div>
+			<div class="progress progress-striped">
+  				<div class="bar" style="width: 85%;"></div>
+  			</div>
 		</div>
 		<div id="averages" class="well">
 			<h3 class="dashstatlabel">My Daily Average</h3>

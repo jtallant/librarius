@@ -279,3 +279,11 @@ img.typekit-badge {
 @media (min-width: 1200px) {
 
 }
+
+rect {
+	fill: transparent;
+}
+
+.highcharts-tooltip rect {
+	fill: #fff;
+}
